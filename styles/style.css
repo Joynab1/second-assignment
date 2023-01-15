@@ -28,6 +28,7 @@
     font-weight: 500;
     text-decoration: none;
     margin-right: 20px;
+    color: #000;
 }
 .banner{
 margin-top: 50px;
@@ -55,17 +56,156 @@ border-radius: 8px;
 border: none;
 color:#FFFFFF;
 }
-img{
-    margin-left: 240px;
-    margin-right: 240px;
+.banner-img img{
+    /* margin-left: 240px;
+    margin-right: 240px; */
     height: 700px;
-    width: 1440px;
-    text-align: center;
+    /* width: 1440px; */
+    width:1400px;
+    text-align: start;
     margin-bottom: 40px;
 }
+/* -----------------
 
+ ----------------------------*/
+.features-container{
+    display: flex;
+    gap: 70px;
+    margin-left: 250px;
+    margin-right: 250px; 
+}
+.feature-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap:24px;
+    row-gap: 24px;
+    margin-top: 100px;
+}
+.feature-details{
+    margin-top: 285px;
+}
+.feature-title{
+    font-size: 35px;  
+}
+.feature-description{
+    font-weight: 400;
+    color: #727272;
+} 
 
+/*--------------------
+      features list
+      -------------------- */
+.vl{
+    border-left: 6px solid #FF900E ;
+    height: 250px;
+}
+.article-container{
+    display: flex;
+    gap: 50px;
+    margin: 130px 240px 100px;  
+}
+.blog-info{
+    box-shadow: 10px 10px 10px white;
+}
+.article-img img{
+width: 700px;
+height: 980px;
+/* padding-left: 100px;
+padding-bottom: 50px; */
+}
+.feature-title{
+    font-size: 35px;
+   color: #131313;
+}
+.article-img{
+position: relative;
+}
+.btn-last{
+position: absolute;
+left: -80px;
+bottom: -70px;
+margin-bottom: 50px;
+font-size: 20px;
+font-weight: 600;
+padding: 20px 15px;
+background-color: #FF900E;
+border-radius: 8px;
+border: none;
+color:#FFFFFF;
+}
+.facts-container{
+    margin-left: 240px;
+    margin-right: 240px;
 
+}
+.fact-details{
+margin-bottom: 70px;
+}
+.fact-title{
+font-size: 35px;
+color: #000000;
+margin-bottom: 20px;
+}
+.fact-description{
+color: #727272;
+margin-right: 500px;
+
+}
+.fact-info{
+    display: flex;
+    justify-content: space-around;
+}
+.icons{
+    text-align: center;
+    padding: 40px 45px;
+    border: 1px solid #FF900E;
+}
+.icons img{
+    margin-bottom:10px;
+}
+
+/* ------------------------
+sponsor section styles 
+----------------------------*/
+.sponsor-details{
+margin: 100px 500px 30px;
+text-align: center;
+}
+.sponsor-title{
+font-size: 35px;
+}
+.sponsor-info{
+color: #727272;
+}
+.sponsor-name{
+display: flex;
+justify-content: space-around;
+margin: 30px 240px 100px;
+}
+/* ----------------------
+     client testimony styles
+     ------------------------- */
+.client-testimony{
+    margin: 0 240px 50px;
+    text-align: center;
+}
+.title{
+font-size: 35px;
+margin-bottom: 20px;
+}
+.description{
+color: #727272;
+margin-bottom: 30px;
+}
+/* --------------------
+     footer section styles
+----------------------------- */
+.footer-description{
+margin: 0 240px ;
+background-color: #FFF4E7;
+text-align: center;
+padding: 35px 0;
+}
 /* --------------------
       Media Queries Styles 
       ------------------------*/

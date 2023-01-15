@@ -32,6 +32,8 @@ body {
 }
 
 .nav-items {
+    display: flex;
+    justify-content: space-evenly;
     margin-top: 65px;
 }
 
@@ -292,10 +294,6 @@ sponsor section styles
     padding: 35px 0;
 }
 
-.hide {
-    display: none;
-}
-
 /* --------------------
       Media Queries Styles 
       ------------------------*/
@@ -304,10 +302,15 @@ sponsor section styles
       -------------------- */
 
 @media only screen and (max-width:576px) {
-
     .nav-bar {
         flex-direction: column;
         margin: 0;
+        text-align: center;
+    }
+
+    .nav-items {
+        flex-direction: column;
+        row-gap: 10px;
     }
 
     .banner {
@@ -345,7 +348,7 @@ sponsor section styles
 
     .facts-container {
         margin: 0;
-        padding: 0 20px;
+        padding: 0;
     }
 
     .fact-details {
@@ -380,7 +383,12 @@ sponsor section styles
     .client-testimony {
         margin: 0;
     }
-    .footer-description{
+
+    .footer-description {
         margin: 0;
+    }
+
+    .client-message iframe {
+        width: 100%;
     }
 }

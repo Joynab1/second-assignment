@@ -124,10 +124,15 @@ main portion styles
       features list
       -------------------- */
 .vl {
-    border-left: 6px solid #FF900E;
-    height: 250px;
-}
+    border-left: 5px solid #FF900E;
+    height: 70px;
+    margin-top: 40px;
 
+}
+.vl-title{
+    display: flex;
+    gap: 10px;
+}
 .feature-container {
     display: flex;
     gap: 50px;
@@ -207,18 +212,31 @@ color: #727272;
 
 .fact-info {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .icons {
     text-align: center;
-    padding: 40px 45px;
+    padding: 20px 25px;
     border: 1px solid #FF900E;
 }
 
-.icons img {
-    margin-bottom: 10px;
+.icon-name{
+    margin-top: -20px;
+    color: #727272;
 }
+
+.icons img {
+    margin-bottom: -10px;
+}
+.icons{
+    transition: width 1s, transform 1s, ease-in 0.5s;
+}
+.icons:hover{
+    background-color: #FF900E;
+    transform: scale(1.25) rotate(30deg);
+}
+
 
 /* ------------------------
 sponsor section styles 
@@ -279,16 +297,11 @@ sponsor section styles
       ------------------------*/
 @media only screen and (max-width:576px) {
 
-    /* .nav-bar{
+    .nav-bar{
             flex-direction: column;
             margin: 0;
         }
         .banner-title{
             margin: 0;
         }
-        img{
-            height:100%;
-            width: 100%;
-            margin: 0;
-        } */
 }
